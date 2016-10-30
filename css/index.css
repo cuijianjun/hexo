@@ -1,0 +1,36 @@
+.section {
+  text-align: center;
+  font: 50px "Microsoft Yahei";
+  color: #fff;
+  position: relative;
+}
+.section span {
+  position: absolute;
+  right: 50px;
+  bottom: 20px;
+}
+.section2 p {
+  position: relative;
+  left: -120%;
+}
+.section3 {
+  background-image: url("../img/bg-main.gif");
+}
+.section3 p {
+  position: relative;
+  bottom: -120%;
+}
+.section4 p {
+  display: none;
+}
+.sim-slider .sim-slider-inner .sim-slider-slide .sim-slider-layer p {
+  color: #DBC989;
+  font-family: "微软雅黑";
+}
+.sim-slider .sim-slider-inner .sim-slider-slide .sim-slider-layer p:nth-child(even) {
+  font-size: 32px;
+}
+.sim-slider .sim-slider-inner .sim-slider-slide .sim-slider-layer .in {
+  margin-top: 100px;
+  height: 400px;
+}

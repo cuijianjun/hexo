@@ -1,10 +1,206 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-	<title>Jd</title>
+    <meta charset="utf-8">
+    <title>简历</title>
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/base.css">
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.fullPage.min.js"></script>
+    <link rel="stylesheet" href="css/responsive-layered-slider.css">
+    <script src="js/jquery-ui-1.10.4.min.js"></script>
+    <script src="js/responsive-layered-slider.js"></script>
+    <script>
+        $(function(){
+            $('#dowebok').fullpage({
+                sectionsColor: ['#E1CCD1', '#FFFFFF', '#DACAB1', '#A7A7A7'],
+                afterLoad: function(anchorLink, index){
+                    if (index == 1){
+
+                    }
+                    if(index == 2){
+                        $('.section2').find('p').delay(500).animate({
+                            left: '0'
+                        }, 1500, 'easeOutExpo');
+
+                    }
+                    if(index == 3){
+                        $('.section3').find('p').delay(500).animate({
+                            bottom: '0'
+                        }, 1500, 'easeOutExpo');
+                    }
+                    if(index == 4){
+                        $('.section4').find('p').fadeIn(2000);
+                    }
+                },
+                onLeave: function(index, direction){
+                    console.log(index+"gfhbfg")
+                    if(index == '2'){
+                        $('.section2').find('p').delay(500).animate({
+                            left: '-120%'
+                        }, 1500, 'easeOutExpo');
+                    }
+                    if(index == '3'){
+                        $('.section3').find('p').delay(500).animate({
+                            bottom: '-120%'
+                        }, 1500, 'easeOutExpo');
+                    }
+                    if(index == '4'){
+                        $('.section4').find('p').fadeOut(2000);
+                    }
+                },
+                //Accessibility 键盘
+                keyboardScrolling: true,
+                animateAnchor: true,
+                recordHistory: true,
+//               固定的元素
+               /* fixedElements: '#header, .footer',
+                responsiveWidth: 2550,
+                responsiveHeight: 1912,
+                responsiveSlides: false,*/
+            });
+        });
+    </script>
 </head>
 <body>
-<div>首页</div>
-<span>大家好哦</span>
+
+<div id="dowebok">
+    <div class="section section1">
+
+        <h3>崔健军</h3>
+        <p>前端开发工程师</p>
+        <span>电话:17010281799</span>
+    </div>
+   <!-- <div class="section section2">
+        <div class="slide"><h3>第二屏的第一屏</h3><p>这是第二屏</p></div>
+        <div class="slide"><h3>第二屏的第二屏</h3></div>
+        <div class="slide"><h3>第二屏的第三屏</h3></div>
+    </div>-->
+    <div class="sim-slider section" data-width="2550" data-height="1912" data-animation="250" data-current="true" data-progress="true">
+        <div class="sim-slider-inner  ">
+            <div class="sim-slider-slide slide">
+                <div class="sim-slider-layer" data-effect="fadeInDown" data-width="1052" data-height="174" data-left="751" data-top="50">
+                    <p>个人简介</p>
+                </div>
+                <div class="sim-slider-layer" data-effect="fadeInLeft" data-width="694" data-height="841" data-left="54" data-top="277">
+
+                    <img src="img/layer_0027.jpg" />
+                </div>
+                <div class="sim-slider-layer" data-effect="fadeInUp" data-width="1019" data-height="848" data-left="770" data-top="277">
+                    <div class="in">
+                    <p>长春工业大学</p>
+                    <p>计算机专业本科</p>
+                    <p>两年工作经验</p>
+                    <p>一年带项目工作经验</p>
+                    <p>自学能力强</p>
+                    </div>
+                    <!--<img src="img/layer_0026.jpg" />-->
+                </div>
+                <div class="sim-slider-layer" data-effect="fadeInRight" data-width="694" data-height="841" data-left="1811" data-top="277">
+                    <img src="img/layer_0028.jpg" />
+                </div>
+            </div>
+
+            <div class="sim-slider-slide slide">
+                <div class="sim-slider-layer" data-effect="fadeInDown" data-width="1052" data-height="173" data-left="751" data-top="150">
+                    <img src="img/layer_0020.png" />
+                </div>
+                <div class="sim-slider-layer" data-effect="fadeInLeft" data-width="660" data-height="800" data-left="108" data-top="332">
+                    <img src="img/layer_0021.png" />
+                </div>
+                <div class="sim-slider-layer" data-effect="fadeInLeft" data-width="501" data-height="600" data-left="770" data-top="523">
+                    <img src="img/layer_0022.png" />
+                </div>
+                <div class="sim-slider-layer" data-effect="fadeInRight" data-width="501" data-height="600" data-left="1328" data-top="523">
+                    <img src="img/layer_0024.png" />
+                </div>
+                <div class="sim-slider-layer" data-effect="fadeInRight" data-width="660" data-height="800" data-left="1807" data-top="332">
+                    <img src="img/layer_0023.png" />
+                </div>
+            </div>
+
+            <div class="sim-slider-slide slide">
+                <div class="sim-slider-layer" data-effect="fadeInDown" data-width="757" data-height="97" data-left="528" data-top="138">
+                    <img src="img/layer_0011.png" />
+                </div>
+                <div class="sim-slider-layer" data-effect="fadeInLeft" data-width="883" data-height="64" data-left="399" data-top="361">
+                    <img src="img/layer_0017.png" />
+                </div>
+                <div class="sim-slider-layer" data-effect="fadeInLeft" data-width="827" data-height="64" data-left="458" data-top="444">
+                    <img src="img/layer_0018.png" />
+                </div>
+                <div class="sim-slider-layer" data-effect="fadeInLeft" data-width="793" data-height="64" data-left="489" data-top="519">
+                    <img src="img/layer_0016.png" />
+                </div>
+                <div class="sim-slider-layer" data-effect="fadeInLeft" data-width="715" data-height="64" data-left="569" data-top="596">
+                    <img src="img/layer_0015.png" />
+                </div>
+                <div class="sim-slider-layer" data-effect="fadeInLeft" data-width="680" data-height="64" data-left="604" data-top="674">
+                    <img src="img/layer_0014.png" />
+                </div>
+                <div class="sim-slider-layer" data-effect="fadeInLeft" data-width="650" data-height="64" data-left="634" data-top="754">
+                    <img src="img/layer_0013.png" />
+                </div>
+                <div class="sim-slider-layer" data-effect="fadeInLeft" data-width="417" data-height="64" data-left="867" data-top="837">
+                    <img src="img/layer_0012.png" />
+                </div>
+                <div class="sim-slider-layer" data-effect="fadeInRight" data-width="477" data-height="700" data-left="1424" data-top="100">
+                    <img src="img/p-3.jpg"  />
+                </div>
+            </div>
+
+            <div class="sim-slider-slide slide">
+                <div class="sim-slider-layer" data-effect="fadeInDown" data-width="773" data-height="1050" data-left="179" data-top="119">
+                    <img src="img/layer_0029.jpg" />
+                </div>
+                <div class="sim-slider-layer" data-effect="fadeInUp" data-width="773" data-height="1050" data-left="935" data-top="60">
+                    <img src="img/layer_0010.jpg" />
+                </div>
+                <div class="sim-slider-layer" data-effect="fadeInDown" data-width="773" data-height="1049" data-left="1707" data-top="119">
+                    <img src="img/layer_0009.jpg" />
+                </div>
+                <div class="sim-slider-layer" data-effect="fadeInDown" data-width="159" data-height="43" data-left="439" data-top="50">
+                    <img src="img/layer_0008.png" />
+                </div>
+                <div class="sim-slider-layer" data-effect="fadeInUp" data-width="144" data-height="43" data-left="1260" data-top="1070">
+                    <img src="img/layer_0007.png" />
+                </div>
+                <div class="sim-slider-layer" data-effect="fadeInDown" data-width="373" data-height="44" data-left="1856" data-top="50">
+                    <img src="img/layer_0006.png" />
+                </div>
+            </div>
+
+            <div class="sim-slider-slide slide">
+                <div class="sim-slider-layer" data-effect="fadeInDown" data-width="1053" data-height="172" data-left="742" data-top="086">
+                    <img src="img/layer_0000.png" />
+                </div>
+                <div class="sim-slider-layer" data-effect="fadeInLeft" data-width="767" data-height="640" data-left="115" data-top="397">
+                    <img src="img/layer_0005.jpg" />
+                </div>
+                <div class="sim-slider-layer" data-effect="fadeInDown" data-width="767" data-height="640" data-left="896" data-top="397">
+                    <img src="img/layer_0003.jpg" />
+                </div>
+                <div class="sim-slider-layer" data-effect="fadeInRight" data-width="767" data-height="640" data-left="1678" data-top="397">
+                    <img src="img/layer_0004.jpg" />
+                </div>
+                <div class="sim-slider-layer" data-effect="fadeInUp" data-width="865" data-height="524" data-left="458" data-top="676">
+                    <img src="img/layer_0001.png" />
+                </div>
+                <div class="sim-slider-layer" data-effect="fadeInUp" data-width="345" data-height="469" data-left="1506" data-top="676">
+                    <img src="img/layer_0002.png" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section section3">
+        <!--<img src="img/bg-main.gif" alt="">-->
+        <p>这是第三屏</p>
+    </div>
+    <div class="section section4">
+        <h3>第四屏</h3>
+        <p>这是最后一屏</p>
+    </div>
+</div>
 </body>
 </html>

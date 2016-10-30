@@ -1,0 +1,5 @@
+body,div,p,ul,dl,dt,dd,li,h4,h5,h3,h6,img,span{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
